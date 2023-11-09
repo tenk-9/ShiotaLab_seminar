@@ -1,11 +1,11 @@
 # ignore private wav
-/shina/shina.wav
-/shina/0.wav
-/yskw/yswk.wav
-/yskw/0.wav
-/ayu/ayu.wav
-/ayu/ayu.wav
-/tani/tani.wav
-/tani/0.wav
-/ktg/ktg.wav
-/ktg/0.wav
+wav/shina/shina.wav
+wav/shina/0.wav
+wav/yskw/yswk.wav
+wav/yskw/0.wav
+wav/ayu/ayu.wav
+wav/ayu/0.wav
+wav/tani/tani.wav
+wav/tani/0.wav
+wav/ktg/ktg.wav
+wav/ktg/0.wav

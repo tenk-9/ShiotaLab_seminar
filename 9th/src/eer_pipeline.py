@@ -72,7 +72,9 @@ def eer_roc_pipeline(wav_list_path: str, save_dir_root: str):
   fpr, tpr, th, eer, eer_th = compute_eer(labels, scores)
 
   #FAR,FRR,EERの図のプロット
+  os.makedirs(f"{save_dir_root}/fig/{title}", exist_ok=True)
   title = re.match(r".*/(.+).txt", wav_list_path).group(1)
+  
   plt.figure()
   plt.plot(th, fpr, marker='o', markersize=1, label="FAR")
   plt.plot(th, 1-tpr, marker='o', markersize=1, label="FRR")

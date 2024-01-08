@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 from tqdm import tqdm
 import re
 import shutil
+import os
 
 verification = SpeakerRecognition.from_hparams(
     source="speechbrain/spkrec-ecapa-voxceleb",

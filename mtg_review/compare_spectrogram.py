@@ -42,6 +42,8 @@ def gen_spectrogram(file_path: str, sample_rate: int) -> plt.figure:
     )
     ax.set_ylim(0, 8000)
     ax.set_title(f"sample_rate={sr}, win_length={WIN_LEN}, hop_length={HOP_LEN}")
+    ax.set_ylabel("Frequency (Hz)")
+    ax.set_xlabel("Time (s)")
     return fig
 
 if __name__ == "__main__":

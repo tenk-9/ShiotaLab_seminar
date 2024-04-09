@@ -12,7 +12,7 @@ WAV_8K: Final[str] = f"{DIR}/8k.wav"
 
 N_FFT: Final[int] = 2048
 WIN_LEN: Final[int] = 1024
-HOP_LEN: Final[int] = WIN_LEN // 2
+HOP_LEN: Final[int] = WIN_LEN // 4
 
 
 def gen_spectrogram(file_path: str, sample_rate: int) -> plt.figure:

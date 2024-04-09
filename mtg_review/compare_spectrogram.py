@@ -14,7 +14,6 @@ N_FFT: Final[int] = 2048
 WIN_LEN: Final[int] = 1024
 HOP_LEN: Final[int] = WIN_LEN // 4
 
-
 def gen_spectrogram(file_path: str, sample_rate: int) -> plt.figure:
     # wav: npt.NDArray[np.float32]
     # sr: int
@@ -44,6 +43,7 @@ def gen_spectrogram(file_path: str, sample_rate: int) -> plt.figure:
     ax.set_ylim(0, 8000)
     ax.set_title(f"sample_rate={sr}, win_length={WIN_LEN}, hop_length={HOP_LEN}")
     return fig
+
 if __name__ == "__main__":
     gen_spectrogram(WAV_16K, 16000)
     plt.savefig(f"{DIR}/16000.png")
